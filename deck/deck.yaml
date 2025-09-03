@@ -31,7 +31,7 @@ services:
         name: sipet-api
         path_handling: v0
         paths:
-          - /sipet123
+          - /sipet12345
         preserve_host: false
         protocols:
           - http
