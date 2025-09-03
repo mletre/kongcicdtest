@@ -17,7 +17,7 @@ pipeline {
         stage('Validate the Deck File') {
             steps {
                script {
-                sh 'deck gateway validate --workspace default deck.yaml'
+                sh 'deck gateway validate --workspace default deck/deck.yaml'
                 }
             }
         }
@@ -28,11 +28,10 @@ pipeline {
             }
         }
         }
-
         stage('Apply Changes') {
             steps {
                script {
-                sh 'deck gateway sync --workspace default deck.yaml'
+                sh 'deck gateway sync --workspace default deck/deck.yaml'
                 }
             }
         }
