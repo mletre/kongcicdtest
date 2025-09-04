@@ -55,7 +55,7 @@ services:
         name: route-test
         path_handling: v0
         paths:
-          - /testing
+          - /testing123
         preserve_host: false
         protocols:
           - http
